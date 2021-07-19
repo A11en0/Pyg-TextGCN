@@ -1,7 +1,7 @@
 import gc
 import torch
 import argparse
-from model import PygGCN, GAT
+from model import GAT, GCN
 from train_eval import TextGCNTrainer
 from utils import return_seed, LoadData
 
@@ -12,15 +12,15 @@ args = parser.parse_args()
 
 def run(dataset, times):
     args.dataset = dataset
-    # args.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-    args.device = torch.device('cpu')
+    args.device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    # args.device = torch.device('cpu')
     args.nhid = 100
     args.max_epoch = 200
     args.dropout = 0.5
     args.val_ratio = 0.1
     args.early_stopping = 10
     args.lr = 0.02
-    model = PygGCN
+    model = GCN
     # model = GAT
     print(args)
 
@@ -45,6 +45,6 @@ def run(dataset, times):
     # print(seed_lst)
 
 if __name__ == '__main__':
-    # run("mr", 1)
-    run("R8", 1)
+    run("mr", 1)
+    # run("R8", 1)
 

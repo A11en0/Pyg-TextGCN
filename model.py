@@ -2,9 +2,9 @@ import torch
 from torch_geometric.nn import GCNConv, ChebConv, GATConv  # noqa
 import torch.nn.functional as F
 
-class PygGCN(torch.nn.Module):
+class GCN(torch.nn.Module):
     def __init__(self, nfeat, nhid, nclass, dropout):
-        super(PygGCN, self).__init__()
+        super(GCN, self).__init__()
         self.conv1 = GCNConv(nfeat, nhid, cached=True, normalize=True)
         self.conv2 = GCNConv(nhid, nclass, cached=True, normalize=True)
         # self.conv1 = ChebConv(nfeat, nhid, K=2)
