@@ -22,4 +22,5 @@ This project was built with:
 ## References
 
 [Yao et al.: Graph Convolutional Networks for Text Classification](https://arxiv.org/abs/1809.05679)
+
 [Pytorch_geometric](https://github.com/rusty1s/pytorch_geometric)
