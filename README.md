@@ -16,9 +16,11 @@ This project was built with:
 
 ## Quick Start
 
-Process the data first, python data_processor.py (Already done)
-Generate graph, python build_graph.py (Already done)
-Training model, python run.py
+Process the data first, `python data_processor.py` (Already done)
+
+Generate graph, `python build_graph.py` (Already done)
+
+Training model, `python run.py`
 
 ## References
 
