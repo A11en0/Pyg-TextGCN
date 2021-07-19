@@ -8,7 +8,6 @@ A *efficient* and *simplify* re-implement TextGCN with Pytorch-geometric.
 This project was built with:
 
 - Python 3.7.0
-- CUDA 11.2
 - Pytorch 1.9.0
 - scikit-learn 0.24.1
 - torch-geometric 1.7.2
