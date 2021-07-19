@@ -1,7 +1,8 @@
 # Pyg-TextGCN 
 
-An *efficient* and *simplify* re-implement TextGCN with Pytorch-geometric. Fork from [PyTorch_TextGCN](https://github.com/chengsen/PyTorch_TextGCN).
+An *efficient* and *simplify* re-implement TextGCN with Pytorch-geometric. Fork from [PyTorch_TextGCN](https://github.com/chengsen/PyTorch_TextGCN). Datasets can be found in that repo.
 <!-- This one is more faster than others(include raw implement) in the own limited testing. -->
+
 
 ## Requirements
 
